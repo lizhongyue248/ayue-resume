@@ -34,12 +34,12 @@ module.exports = {
           title: '个人简历',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: '个人概述',
+              to: 'docs/base',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: '专业能力',
+              to: 'docs/rear',
             },
           ],
         },
