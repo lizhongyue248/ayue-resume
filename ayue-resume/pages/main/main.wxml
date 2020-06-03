@@ -1,0 +1,155 @@
+<swiper style="height:{{height}}px">
+  <swiper-item>
+    <scroll-view scroll-y style="width: {{width}}px; height: {{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">1</view>
+            <text class="section-title">基本资料</text>
+          </view>
+          <view class="column col-2">
+            <text class="info">姓名：{{name}}</text>
+            <text class="info">电话：{{tel}}</text>
+          </view>
+          <view class="column col-2">
+            <text class="info">性别：{{sex}}</text>
+            <text class="info">年龄：{{age}}</text>
+          </view>
+          <view class="column col-1">
+            <text class="info" bindtap="copy" data-text="{{blog}}">个人博客：{{blog}}</text>
+          </view>
+          <view class="column col-1">
+            <text class="info" bindtap="copy" data-text="{{resume}}">在线简历：{{resume}}</text>
+          </view>
+          <view class="column col-1">
+            <text class="info" bindtap="copy" data-text="{{github}}">Github：{{github}}</text>
+          </view>
+          <view class="column col-1">
+            <text class="info" bindtap="copy" data-text="{{email}}">邮箱：{{email}}</text>
+          </view>
+        </view>
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">2</view>
+            <text class="section-title">主要技能</text>
+          </view>
+          <view class="skill" wx:for="{{skill}}" wx:key="item">
+            <text class="skill-name">{{item.name}}</text>
+            <progress class="progress" percent="{{item.percent}}" />
+          </view>
+        </view>
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">3</view>
+            <text class="section-title">教育经历</text>
+          </view>
+          <view class="education" wx:for="{{education}}" wx:key="item">
+            <view class="school">
+              <image src="../../img/icon_school.png" class="icon-school" />
+              <text class="school-name">{{item.school}}</text>
+            </view>
+            <view class="row">
+              <view class="education-info">
+                <image src="../../img/icon_book.png" class="icon-book" />
+                <text>{{item.major}}</text>
+              </view>
+              <view class="education-info">
+                <image src="../../img/icon_calendar.png" class="icon-calendar" />
+                <text>{{item.year}}</text>
+              </view>
+            </view>
+            <rich-text class="desc">{{item.desc}}</rich-text>
+          </view>
+        </view>
+        <text class="page">1/4</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="width: {{width}}px; height: {{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">4</view>
+            <text class="section-title">技能详述</text>
+          </view>
+          <view class="skill-info" wx:for="{{skillInfo}}" wx:key="item">
+            <view class="skill-one">
+              <image src="../../img/skills.png" class="icon-skill"></image>
+              <text>{{item.title}}</text>
+            </view>
+            <rich-text class="skill-content">{{item.content}}</rich-text>
+          </view>
+        </view>
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">5</view>
+            <text class="section-title">专业认证</text>
+          </view>
+          <view class="column col-2" wx:for="{{certification}}" wx:key="item">
+            <text class="info no-wrap">{{item.name}}</text>
+            <text class="info text-right">{{item.date}}</text>
+          </view>
+        </view>
+        <text class="page">2/4</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="width: {{width}}px; height: {{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section-info">
+            <view class="section-seq">6</view>
+            <text class="section-title">项目经历</text>
+          </view>
+          <view class="section">
+            <view class="project" wx:for="{{project}}" wx:key="item">
+              <view class="project-name">
+                <image src="../../img/icon_computer.png" class="icon-computer" />
+                <text>{{item.name}}</text>
+              </view>
+              <view class="row">
+                <view class="project-info">
+                  <image src="../../img/icon_job.png" class="icon-job" />
+                  <text>{{item.job}}</text>
+                </view>
+                <view class="project-info">
+                  <image src="../../img/icon_calendar.png" class="icon-calendar" />
+                  <text>{{item.year}}</text>
+                </view>
+              </view>
+              <rich-text class="desc">{{item.desc}}</rich-text>
+              <view class="github">
+                <image src="../../img/github.png" class="icon-github" />
+                <text  data-text="item.github" bindtap="copy"> {{item.github}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <text class="page">3/4</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y style="width: {{width}}px; height: {{height}}px">
+      <view class="resume">
+        <view class="section">
+          <view class="section text-center">
+            <text class="thanks">感谢您的耐心观看！</text>
+          </view>
+          <hr />
+          <view class="section text-center">
+            <image src="../../img/wechat.png" data-path="../../img/wechat.png" class="contact" bindlongpress="saveImage"></image>
+            <text class="contact-name">微信（长按保存）</text>
+          </view>
+          <view class="section text-center">
+            <image src="../../img/qq.png"  data-path="../../img/qq.png" class="contact" bindlongpress="saveImage"></image>
+            <text class="contact-name">QQ（长按保存）</text>
+          </view>
+        </view>
+        <text class="page">4/4</text>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

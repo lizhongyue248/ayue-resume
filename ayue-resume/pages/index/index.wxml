@@ -1,0 +1,18 @@
+<view>
+  <image src="../../img/me.png" mode="widthFix" id="me" />
+  <view id="cover-info">
+    <text id="cover-name">{{name}}</text>
+    <text id="cover-spell">{{spell}}</text>
+  </view>
+  <view class="big-circle"></view>
+  <view class="medium-circle"></view>
+  <view class="small-circle"></view>
+  <view id="cover-work">
+    <text id="cover-job">{{job}}</text>
+    <text id="cover-exp">{{exp}}</text>
+  </view>
+  <view class="navigation" bindtap="toMain">
+    我的简历
+    <image src="../../img/arrow-right.png" class="arrow-right" />
+  </view>
+</view>
