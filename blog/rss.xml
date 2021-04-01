@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>个人简历 Blog</title>
+        <link>https://me.ayue.wiki/blog</link>
+        <description>个人简历 Blog</description>
+        <lastBuildDate>Wed, 01 Jan 2020 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Wiki]]></title>
+            <link>https://me.ayue.wiki/blog/wiki</link>
+            <guid>wiki</guid>
+            <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+            <description><![CDATA[https://ayue.wiki]]></description>
+        </item>
+        <item>
+            <title><![CDATA[EchoCow]]></title>
+            <link>https://me.ayue.wiki/blog/echo-cow</link>
+            <guid>echo-cow</guid>
+            <pubDate>Sun, 01 Jul 2018 00:00:00 GMT</pubDate>
+            <description><![CDATA[https://echocow.cn]]></description>
+        </item>
+    </channel>
+</rss>
