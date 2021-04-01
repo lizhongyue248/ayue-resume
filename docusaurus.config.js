@@ -13,7 +13,7 @@ module.exports = {
         alt: 'My Site Logo',
         src: 'img/avatar.gif',
       },
-      links: [
+      items: [
         {
           to: 'docs/base',
           activeBasePath: 'docs',
@@ -41,6 +41,10 @@ module.exports = {
               label: '专业能力',
               to: 'docs/rear',
             },
+            {
+              label: '工作经历',
+              to: 'docs/work'
+            }
           ],
         },
         {
